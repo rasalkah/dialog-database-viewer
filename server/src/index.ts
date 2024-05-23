@@ -1,6 +1,6 @@
 import { createServer } from "./server";
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8745;
 
 const server = createServer().listen(PORT, () => {
   console.log(`🚀 Server ready at: http://localhost:${PORT}`);
