@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "installserver": "cd server && npm install",
+    "installweb": "cd web && npm install",
+    "postinstall": "npm run installserver && npm run installweb",
     "local": "concurrently \"npm run server\" \"npm run web\"",
     "server": "npm run local --prefix server",
     "web": "npm run local --prefix web"
