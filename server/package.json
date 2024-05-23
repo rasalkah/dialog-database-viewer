@@ -5,7 +5,7 @@
   "main": "dist/src/index.js",
   "scripts": {
     "lint": "npx eslint .",
-    "dev:start": "npm-run-all build start",
+    "dev:start": "npm-run-all start",
     "local": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
     "start": "node server.js",
     "test:unit": "DOTENV_CONFIG_PATH=./.env.test jest -i --verbose test/unit",
