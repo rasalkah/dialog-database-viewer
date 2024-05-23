@@ -4,10 +4,7 @@
   "description": "",
   "main": "dist/src/index.js",
   "scripts": {
-    "clean": "rimraf dist/*",
-    "tsc": "npx tsc",
     "lint": "npx eslint .",
-    "build": "npm-run-all clean tsc",
     "dev:start": "npm-run-all build start",
     "local": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
     "start": "node server.js",
